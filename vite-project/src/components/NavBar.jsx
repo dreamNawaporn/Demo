@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { Link } from "react-router-dom";
-import './search.jsx'
+import '../pages/search.jsx'
+import '../pages/Add.jsx'
+import '../pages/Restaurant.jsx'
 
 const NavBar = () => {
   return (
