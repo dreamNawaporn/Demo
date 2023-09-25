@@ -12,7 +12,8 @@ const Card = ({ restaurant }) => {
                 <p class="card-text">ไม่มีหมู มีลูกชิ้นปลา+ลูกชิ้นกุ้ง+ลูกชิ้นแคะ+ลูกชิ้นกรอบ+ลูกชิ้นเต้าหู้เหลือง.</p>
                 <a href="#" class="btn btn-primary">ราคา 55</a>
             </div>
-        </div>;
+            <link rel="stylesheet" href="" />
+        </div>
         
         
     )

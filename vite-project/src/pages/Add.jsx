@@ -21,9 +21,9 @@ const Add = () => {
     const navigate = useNavigate()
     // สร้าง state เพื่อเก็บข้อมูลเมนูอาหาร
     const [menu, setMenu] = useState({
-        name: '',
-        type: '',
-        img: '',
+        name: 'name',
+        type: 'type',
+        img: 'img',
 
     });
 
@@ -71,9 +71,7 @@ const Add = () => {
                             className="form-control"
                             id="name"
                             name="name"
-                            value={menu.name}
-                            onChange={handleInputChange}
-                            required
+                            placeholder="Restaurant name"
                         />
                     </div>
                     <div className="mb-3">
@@ -85,30 +83,24 @@ const Add = () => {
                             className="form-control"
                             id="type"
                             name="type"
-                            value={menu.type}
-                            onChange={handleInputChange}
-                            required
+                            placeholder="Restaurant type"
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="img" className="form-label resized-image">
-                            URL รูปภาพ:
+                        <label htmlFor="type" className="form-label">
+                            ประเภท:
                         </label>
                         <input
-                            type="url"
+                            type="text"
                             className="form-control"
-                            id="img"
-                            name="img"
-                            value={menu.img}
-                            onChange={handleInputChange}
-                            required
+                            id="imageurl"
+                            name="imageurl"
+                            placeholder="Restaurant imageurl"
                         />
                     </div>
                     <div className="mb-3">
                         <label className='form-label'>ตัวอย่างรูปภาพ:</label>
                         <br />
-                        <img src={menu.img} className="img-fluid resized-image"
-                        />
                     </div>
                 </div>
                 <div className="d-grid gap-2">

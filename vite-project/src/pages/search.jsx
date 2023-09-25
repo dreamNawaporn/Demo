@@ -1,7 +1,7 @@
 import React from 'react';
 import Search from './search';
 
-function App() {
+function search() {
     return (
         <div>
             <input
@@ -22,4 +22,4 @@ function App() {
     );
 }
 
-export default App;
+export default search;
